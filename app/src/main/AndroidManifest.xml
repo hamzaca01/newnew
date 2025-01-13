@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.School"
+        tools:targetApi="31">
+        <activity
+            android:name=".ExamHomePage.java"
+            android:exported="false"
+            android:label="@string/title_activity_exam_home_page.java"
+            android:theme="@style/Theme.School" />
+        <activity
+            android:name=".ExamHomePage"
+            android:exported="false"
+            android:label="@string/title_activity_exam_home_page"
+            android:theme="@style/Theme.School" />
+        <activity
+            android:name=".Dashboard"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Home.TeachersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Home.StudentsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Home.AdministrationActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".ClassWork"
+            android:label="@string/classwork"
+            android:parentActivityName=".Dashboard"
+            android:theme="@style/Theme.School" />
+        <activity
+            android:name=".HomeWork"
+            android:label="@string/homework"
+            android:parentActivityName=".Dashboard"
+            android:theme="@style/Theme.School" />
+        <activity
+            android:name=".Assignment"
+            android:label="@string/assignment"
+            android:parentActivityName=".Dashboard"
+            android:theme="@style/Theme.School" />
+        <activity
+            android:name=".Attendence"
+            android:label="@string/attendence"
+            android:parentActivityName=".Dashboard"
+            android:theme="@style/Theme.School" />
+        <activity
+            android:name=".TimeTable"
+            android:label="@string/timetable"
+            android:parentActivityName=".Dashboard"
+            android:theme="@style/Theme.School" />
+        <activity
+            android:name=".Holiday"
+            android:label="@string/holiday"
+            android:parentActivityName=".Dashboard"
+            android:theme="@style/Theme.School" />
+        <activity
+            android:name=".NoticeBoard"
+            android:label="@string/noticeboard"
+            android:parentActivityName=".Dashboard"
+            android:theme="@style/Theme.School" />
+        <activity
+            android:name=".Books"
+            android:label="@string/books"
+            android:parentActivityName=".Dashboard"
+            android:theme="@style/Theme.School" />
+        <activity
+            android:name=".Activity"
+            android:label="@string/activity"
+            android:parentActivityName=".Dashboard"
+            android:theme="@style/Theme.School" />
+        <activity
+            android:name=".Feedues"
+            android:label="@string/feedues"
+            android:parentActivityName=".Dashboard"
+            android:theme="@style/Theme.School" />
+        <activity
+            android:name=".Result"
+            android:label="@string/result"
+            android:parentActivityName=".Dashboard"
+            android:theme="@style/Theme.School" />
+        <activity
+            android:name=".SchoolBus"
+            android:label="@string/schoolbus"
+            android:parentActivityName=".Dashboard"
+            android:theme="@style/Theme.School" />
+        <activity
+            android:name=".Navigation"
+            android:label="@string/navigation"
+            android:parentActivityName=".Dashboard"
+            android:theme="@style/Theme.School" />
+        <activity
+            android:name=".OnlineClass"
+            android:label="@string/onlineclass"
+            android:parentActivityName=".Dashboard"
+            android:theme="@style/Theme.School" />
+        <activity
+            android:name=".Tour"
+            android:label="@string/tour"
+            android:parentActivityName=".Dashboard"
+            android:theme="@style/Theme.School" />
+        <activity
+            android:name=".ExamHomePageActivity"
+            android:label="ExamHomePage"
+            android:parentActivityName=".Dashboard"
+            android:theme="@style/Theme.School" />
+        <activity
+            android:name=".CreateExamActivity"
+            android:label="CreateExam"
+            android:parentActivityName=".ExamHomePageActivity"
+            android:theme="@style/Theme.School" />
+        <activity
+            android:name=".SearchExamsActivity"
+            android:label="SearchExams"
+            android:parentActivityName=".ExamHomePageActivity"
+            android:theme="@style/Theme.School" />
+        <activity
+            android:name=".EditExamActivity"
+            android:label="EditExam"
+            android:parentActivityName=".SearchExamsActivity"
+            android:theme="@style/Theme.School" />
+    </application>
+
+</manifest>

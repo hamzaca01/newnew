@@ -1,0 +1,115 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search and Display Exams"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="16dp"
+        android:textColor="#E80C0C" />
+
+    <!-- Search Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="16dp">
+
+        <!-- Search by Name -->
+        <EditText
+            android:id="@+id/editTextSearchName"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Search by Name"
+            android:drawableLeft="@drawable/text_icon"
+            android:drawablePadding="8dp"
+            android:background="@drawable/edittext_bkg"
+            android:padding="10dp" />
+
+        <!-- Search by Date -->
+        <EditText
+            android:id="@+id/editTextSearchDate"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Select Exam Date"
+            android:drawableLeft="@drawable/date_exam"
+            android:drawablePadding="8dp"
+            android:background="@drawable/edittext_bkg"
+            android:padding="10dp"
+            android:focusable="false"
+            android:clickable="true"
+            android:layout_marginTop="8dp"/>
+
+
+        <!-- Search by Location -->
+        <EditText
+            android:id="@+id/editTextSearchLocation"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Search by Location"
+            android:drawableLeft="@drawable/location"
+            android:drawablePadding="8dp"
+            android:background="@drawable/edittext_bkg"
+            android:padding="10dp"
+            android:layout_marginTop="8dp" />
+
+
+        <!-- Search Button -->
+        <Button
+            android:id="@+id/buttonSearch"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#E80C0C"
+            android:text="Search"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <!-- Exam List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewExams"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:background="@android:color/white" />
+
+    <!-- Action Buttons (Initially Disabled) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingTop="16dp">
+
+        <Button
+            android:id="@+id/buttonModifyExam"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="#E80C0C"
+            android:text="Modify"
+            android:textColor="@android:color/white"
+            android:enabled="false"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/buttonDeleteExam"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/red"
+            android:text="Delete"
+            android:textColor="@android:color/white"
+            android:enabled="false"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>
